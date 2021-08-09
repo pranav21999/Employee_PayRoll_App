@@ -43,7 +43,7 @@ body {
 * {
     box-sizing: border-box;
 }
-/*--UC2--*/
+/*-UC2-*/
 
 .form-content {
     min-height: calc(100% -80px);
