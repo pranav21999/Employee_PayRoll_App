@@ -1,10 +1,9 @@
-class EmployeePayRollData {
-    /**UC1_:ModifyEmpPayRoll
+class PersonInfo {
+    /**
      * setter and getter methods
      * validating the user inputs using regular expression
      */
-
-
+    
     get name() {
         return this._name;
     }
@@ -56,20 +55,6 @@ class EmployeePayRollData {
         this._note = note;
     }
 
-        set startDate(startDate) {
-        let currentDate = new Date();
-        if (startDate > currentDate)
-            throw "Start Date is a future date";
-        
-        var diff = Math.abs(currentDate.getTime() - startDate.getTime());
-        if(diff / (1000*60*60*24) > 30){
-            throw "Start Date is a beyond 30 days";
-        } 
-        this._startDate = startDate;    
-    }
-
-
-
     get start_date() {
         return this._start_date;
     }
@@ -86,6 +71,4 @@ class EmployeePayRollData {
                     + ", Department = " + this.department + ", Salary = " + this.salary +
                         ", StartDate = " + empDate + ", Note = " +this.note;
     }
-
-
 }
