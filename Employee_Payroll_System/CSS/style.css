@@ -176,15 +176,6 @@ select {
     text-align: center;
 }
 
-@media only screen and (max-width: 960px) {
-    .cancelButton {
-        margin-left: 0px;
-    }
-    .form {
-        width: 85%;
-        padding: 44px 20px;
-    }
-}
 
 @media only screen and (max-width: 600px) {
     .form {
