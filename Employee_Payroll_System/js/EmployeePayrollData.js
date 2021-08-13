@@ -63,6 +63,8 @@ class PersonInfo {
         this._start_date = start_date;
     }
 
+    
+
     toString() {
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         const empDate = !this.start_date ? "undefined" :
