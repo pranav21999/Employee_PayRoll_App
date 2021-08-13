@@ -1,39 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/home.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
-            rel="stylesheet">
-        <title>Employee Payroll App</title>
-        <link rel="stylesheet" href="../css/Home.css">
-        <script defer src="../js/home.js"></script>
-    </head>
-    <body>
-        <!--UC 14-->
-        <header class="header-content header">
-            <div class="logo-content">
-                <img src="../assets/images/logo.png" alt="">
-                <div>
-                    <span class="emp-text">EMPLOYEE</span><br>
-                    <span class="emp-text emp-payroll">PAYROLL</span>
-                </div>
-            </div>
-        </header>
-        <!--UC 15-->
-        <div class="main-content">
-            <div class="header-content">
-                <div class="emp-detail-text">
-                    Employee Details
-                    <div class="emp-count">0</div>
-                </div>
-                <a href="E:/javascript/node/Employee-Payroll-App/Employee_Payroll_System/Html/Employeepayroll.html" class="add-button">
-                <img src="../assets/icons/add-24px.svg" alt="">Add User</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <title>Employee Payroll App</title>
+    <script defer src="/js/home.js"></script>
+    <link rel="stylesheet" href="../css/Home.css">
+
+</head>
+
+<body>
+    <!--UC 14-->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/images/logo.png" alt="">
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
             </div>
         </div>
-    </body>
+    </header>
+    <!--UC 15-->
+    <div class="main-content">
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Employee Details
+                <div class="emp-count">1</div>
+            </div>
+            <a href="E:/javascript/node/Employee-Payroll-App/Employee_Payroll_System/Html/Employeepayroll.html"
+                class="add-button">
+                <img src="../assets/icons/add-24px.svg" alt="">Add User</a>
+        </div>
+        <!--UC 16-->
+        <div class="table-main">
+            <table id="display" class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Pranav Dani</td>
+                    <td>Male</td>
+                    <td>
+                        <div class="dept-label">HR</div>
+                        <div class="dept-label">Engineer</div>
+                    </td>
+                    <td>900000</td>
+                    <td>5 MAr 2021</td>
+                    <td>
+                        <img id="1" onclick="remove(this)" alt="delete" src="../assets/icons/delete-black-18dp.svg">
+                        <img id="1" onclick="update(this)" alt="edit" src="../assets/icons/create-black-18dp.svg">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sanket</td>
+                    <td>Male</td>
+                    <td>
+                        <div class="dept-label">HR</div>
+                        <div class="dept-label">Engineer</div>
+                    </td>
+                    <td>800000</td>
+                    <td>23 apr 2020</td>
+                    <td>
+                        <img id="1" onclick="remove(this)" alt="delete" src="../assets/icons/delete-black-18dp.svg">
+                        <img id="1" onclick="update(this)" alt="edit" src="../assets/icons/create-black-18dp.svg">
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+
 </html>
